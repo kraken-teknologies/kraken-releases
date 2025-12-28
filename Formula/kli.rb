@@ -16,11 +16,11 @@ class Kli < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kraken-teknologies/kraken-releases/releases/download/kli/v0.0.3/kli_0.0.3_linux_arm64.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      url "https://github.com/kraken-teknologies/kraken-releases/releases/download/kli%2Fv0.0.3/kli-v0.0.3-linux-arm64.tar.gz"
+      sha256 "51f77b11918a65f7d4a43e8078b157004b8de2a485e1b17edb58ac64f7ea4a2b"
     else
-      url "https://github.com/kraken-teknologies/kraken-releases/releases/download/kli/v0.0.3/kli_0.0.3_linux_amd64.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      url "https://github.com/kraken-teknologies/kraken-releases/releases/download/kli%2Fv0.0.3/kli-v0.0.3-linux-amd64.tar.gz"
+      sha256 "90f2f0d90d23869aac45a459dcd29b5c9e7e8366fb9ba77cd8dca4cbb4912332"
     end
   end
 
