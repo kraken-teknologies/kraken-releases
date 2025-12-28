@@ -1,16 +1,16 @@
 class Kli < Formula
   desc "Kraken Command Line Interface"
-  homepage "https://github.com/kraken-teknologies/kli"
+  homepage "https://github.com/kraken-teknologies/kraken-releases"
   version "0.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/kraken-teknologies/kraken-releases/releases/download/kli%2Fv0.0.3/kli-v0.0.3-darwin-arm64.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      sha256 "sha256:d9f2e4cc451a17424d2e769b6412e9a10934a5fb4c76de4d5500b67e58ea18ff"
     else
       url "https://github.com/kraken-teknologies/kraken-releases/releases/download/kli%2Fv0.0.3/kli-v0.0.3-darwin-amd64.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      sha256 "sha256:0b10e7ae90ed50b792d8592032184d600a3511adbf6e6f068b1e6fb62d257206"
     end
   end
 
