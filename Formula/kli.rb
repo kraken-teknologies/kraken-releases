@@ -25,7 +25,15 @@ class Kli < Formula
   end
 
   def install
-    bin.install "kli"
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "kli-darwin-arm64" => "kli"
+    elsif OS.mac? && Hardware::CPU.intel?
+      bin.install "kli-darwin-amd64" => "kli"
+    elsif OS.linux? && Hardware::CPU.arm?
+      bin.install "kli-linux-arm64" => "kli"
+    else
+      bin.install "kli-linux-amd64" => "kli"
+    end
   end
 
   test do
