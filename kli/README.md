@@ -5,7 +5,7 @@
 ## Homebrew Installation
 
 ```bash
-brew install krakenteknologies/tap/kli
+brew install krakenteknologies/kraken-releases/kli
 ```
 
 ## Configuration
