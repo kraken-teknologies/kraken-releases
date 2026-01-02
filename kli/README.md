@@ -1,6 +1,6 @@
 # kli
 
-`kli` is a cloud and DevOps automation CLI tool.
+`kli` is DevOps CLI tool for ArgoCD and Kubernetes. Its main purpose is to gain information quickly about resources running in argocd or the k8s cluster.
 
 ## Homebrew Installation
 
@@ -59,13 +59,18 @@ Manage Argo CD contexts (servers).
 ### Kubernetes
 Operations for inspecting Kubernetes resources.
 
+#### Context
+- `kli k8s context`: List and interactively select Kubernetes contexts.
+  - `-l, --list`: List contexts only.
+
 #### Status
 - `kli k8s status`: List status of key resources (Nodes, Pods, Deployments, PVCs, etc.).
   - `--context string`: Kubeconfig context (or kli alias).
 
 #### Stats
 - `kli k8s stats`: Show pod resource usage vs requests/limits.
-  - `-n, --namespace string`: Target namespace (required).
+  - `-n, --namespace string`: Target namespace.
+  - `-A, --all-namespaces`: List stats for all namespaces.
   - `--context string`: Kubeconfig context (or kli alias).
 
 #### Events

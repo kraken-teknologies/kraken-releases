@@ -1,26 +1,26 @@
 class Kli < Formula
   desc "Kraken Command Line Interface"
   homepage "https://github.com/kraken-teknologies/kraken-releases"
-  version "0.0.3"
+  version "0.0.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/kraken-teknologies/kraken-releases/releases/download/kli%2Fv0.0.3/kli-v0.0.3-darwin-arm64.tar.gz"
-      sha256 "d9f2e4cc451a17424d2e769b6412e9a10934a5fb4c76de4d5500b67e58ea18ff"
+      url "https://github.com/kraken-teknologies/kraken-releases/releases/download/kli%2Fv0.0.4/kli-v0.0.4-darwin-arm64.tar.gz"
+      sha256 "b634d5f18183a188599a6da92c5a5a79277911a6dcea2903806491f2458"
     else
-      url "https://github.com/kraken-teknologies/kraken-releases/releases/download/kli%2Fv0.0.3/kli-v0.0.3-darwin-amd64.tar.gz"
-      sha256 "0b10e7ae90ed50b792d8592032184d600a3511adbf6e6f068b1e6fb62d257206"
+      url "https://github.com/kraken-teknologies/kraken-releases/releases/download/kli%2Fv0.0.4/kli-v0.0.4-darwin-amd64.tar.gz"
+      sha256 "53eb180b1f417f78b89be43af2c1e24bf9781e63a610d9c84153c5a00e4"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kraken-teknologies/kraken-releases/releases/download/kli%2Fv0.0.3/kli-v0.0.3-linux-arm64.tar.gz"
-      sha256 "51f77b11918a65f7d4a43e8078b157004b8de2a485e1b17edb58ac64f7ea4a2b"
+      url "https://github.com/kraken-teknologies/kraken-releases/releases/download/kli%2Fv0.0.4/kli-v0.0.4-linux-arm64.tar.gz"
+      sha256 "52e49e4c1ad5221d5e9ca26e8fa6a6a0bb2c11ab0f1231e2c014c688116460ec"
     else
-      url "https://github.com/kraken-teknologies/kraken-releases/releases/download/kli%2Fv0.0.3/kli-v0.0.3-linux-amd64.tar.gz"
-      sha256 "90f2f0d90d23869aac45a459dcd29b5c9e7e8366fb9ba77cd8dca4cbb4912332"
+      url "https://github.com/kraken-teknologies/kraken-releases/releases/download/kli%2Fv0.0.4/kli-v0.0.4-linux-amd64.tar.gz"
+      sha256 "7fc34d9edcf587efe7bacf8b2b97b15fc0186456a7567b83ceabc1f0b2e0b8a8"
     end
   end
 
