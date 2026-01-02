@@ -7,10 +7,10 @@ class Kli < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/kraken-teknologies/kraken-releases/releases/download/kli%2Fv0.0.4/kli-v0.0.4-darwin-arm64.tar.gz"
-      sha256 "b634d5f18183a188599a6da92c5a5a79277911a6dcea2903806491f2458"
+      sha256 "b634d5f18183a188599a6da92c5a5a79277911a6dcea2903806491f2458eab3f"
     else
       url "https://github.com/kraken-teknologies/kraken-releases/releases/download/kli%2Fv0.0.4/kli-v0.0.4-darwin-amd64.tar.gz"
-      sha256 "53eb180b1f417f78b89be43af2c1e24bf9781e63a610d9c84153c5a00e4"
+      sha256 "53eb180b1f417f78b89be43af2c1e24bf9781e63a610d9c84153c5a00e46ffe4"
     end
   end
 
